@@ -66,7 +66,6 @@ h1 {
     display: block;
 }
 
-
 .mastercraft {
     position: relative;
     top: -38px;
@@ -82,7 +81,7 @@ h1 {
 .mastercraft--logo {
     position: absolute;
     top: -28px;
-    left: calc(74% - 100px);
+    left: calc(50% - 35px);
 }
 
 .mastercraft__text--title {
@@ -110,7 +109,7 @@ h1 {
     margin-bottom: 20px;
 }
 
-.buttons__container .button--ca {
+.button--ca {
     width: 70%;
     height: 38px;
     padding: 5px;
@@ -165,8 +164,80 @@ h1 {
 .about__container {
     width: 70%;
     min-width: 300px;
-    height: 310px;
+    height: auto;
     margin: 40px auto;
+    padding: 23px;
     background-color: white;
     border-radius: 7px;
+}
+
+.about__introduction {
+    text-align: left;
+}
+
+.about__introduction .about__introduction--title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    margin: 10px 0px;
+}
+
+.about__introduction .about__introduction--paragraph {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.0rem;
+    color: grey;
+}
+
+.options__container {
+    margin-top:25px;
+}
+
+.option--item {
+    padding: 17px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.option--item .option--item-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.option--item .option--item-subtitle {
+    font-size: 1.2rem;
+    line-height: 2.0rem;
+    color: #1ABC9C;;
+}
+
+.option--item .option--item-paragraph {
+    margin: 20px 0px;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 2.0rem;
+    color: grey;
+}
+
+.option--item .number {
+    font-size: 2.0rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+span {
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: grey;
+    vertical-align: 3px;
+}
+
+.item__opacity {
+    opacity: 0.3;
+}
+
+.button__gray {
+    background-color: grey;
 }
