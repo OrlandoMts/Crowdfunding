@@ -1,0 +1,19 @@
+.option--item .option--item-choose {
+    display: flex;
+    align-items: baseline;
+}
+
+.option--item-choose .option--item-title {
+    margin-left: 5px;
+}
+
+.about--modal-close {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about--modal-close .close {
+    width: 15px;
+    height: 15px;
+}
