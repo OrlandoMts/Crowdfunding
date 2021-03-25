@@ -48,6 +48,10 @@ h1 {
     left: calc(50% - 138px);
 }
 
+.header__menu--nav li:last-child {
+    border-bottom: none;
+}
+
 .header__menu--nav-item {
     padding-bottom: 10px;
     margin-top: 20px;
@@ -134,7 +138,7 @@ h1 {
 .results {
     width: 70%;
     min-width: 300px;
-    height: 310px;
+    height: 343px;
     margin: 0 auto;
     background-color: white;
     border-radius: 7px;
@@ -143,6 +147,15 @@ h1 {
 .result--item {
     text-align: center;
     padding: 10px 0px;
+}
+
+.results__container .result--item::after {
+    display: block;
+    width: 80px;
+    height: 10px;
+    position: relative;
+    left: calc(50% -  40px);
+    content: close-quote;
     border-bottom: 1px solid #CFCECD;
 }
 
@@ -152,13 +165,21 @@ h1 {
     margin-top: 17px;
 }
 
-.result--level {
+.result__container {
     width: 90%;
     margin: 15px auto;
     height: 10px;
     border: none;
     border-radius: 7px;
-    background-color: #1ABC9C;
+    background-color: #CFCECD;
+}
+
+.result__container .result--level {
+    width: 70%;
+    height: 10px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1ABC9C;;
 }
 
 .about__container {
