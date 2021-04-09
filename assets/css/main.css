@@ -66,9 +66,9 @@ h1 {
     color: black;
 }
 
-.header__menu:hover .header__menu--nav {
+/* .header__menu:hover .header__menu--nav {
     display: block;
-}
+} */
 
 .mastercraft {
     position: relative;
