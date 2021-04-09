@@ -12,10 +12,16 @@ menu.addEventListener('click', () => {
 
 for (let i = 0; i < optionSelected.length; i++) {
     let element = optionSelected[i];
-    let modal = document.querySelector('.container--modal');
+    let modal = document.querySelector('.container--modal'); //Padre
 
-    element.addEventListener('click', (e) => {
-        console.log(e.target);
-        modal.style.display = 'block'
-    })
+    element.addEventListener('click', () => {
+        modal.style.display = 'block';
+        // Creo que debo llamar una clase de ccs que aplique un background transparente a todo el documento, aun no la creo
+        if (modal.style.display == 'block') {
+            let closeModal = document.querySelector('.about--modal-close img')
+            closeModal.addEventListener('click', () => {
+                modal.style.display = 'none';
+            });
+        }
+    });
 }

@@ -1,5 +1,9 @@
 .container--modal {
     display: none;
+    position: absolute;
+    top: 257vh;
+    left: calc(50% - 159px);
+    width: 85%;
 }
 .option--item .option--item-choose {
     display: flex;
@@ -8,6 +12,7 @@
 
 .option--item-choose .option--item-title {
     margin-left: 5px;
+    cursor: pointer;
 }
 
 .about--modal-close {
