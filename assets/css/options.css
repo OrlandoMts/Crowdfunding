@@ -1,3 +1,6 @@
+.container--modal {
+    display: none;
+}
 .option--item .option--item-choose {
     display: flex;
     align-items: baseline;
