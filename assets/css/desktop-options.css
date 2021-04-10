@@ -1,0 +1,5 @@
+.container--modal {
+    left: calc(50% - 405px);
+    min-width: 800px;
+    top: -100px
+}

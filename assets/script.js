@@ -15,10 +15,16 @@ for (let i = 0; i < optionSelected.length; i++) {
     let modal = document.querySelector('.container--modal'); //Padre
 
     element.addEventListener('click', () => {
+        // let body = document.getElementById('body');
+        
         modal.style.display = 'block';
+        // let widthScreen = window.screen.width;
+        // console.log(widthScreen);
+        // body.className = 'modal--background';
         // Creo que debo llamar una clase de ccs que aplique un background transparente a todo el documento, aun no la creo
         if (modal.style.display == 'block') {
-            let closeModal = document.querySelector('.about--modal-close img')
+            let closeModal = document.querySelector('.about--modal-close img');
+            
             closeModal.addEventListener('click', () => {
                 modal.style.display = 'none';
             });

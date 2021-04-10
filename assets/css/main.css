@@ -213,6 +213,7 @@ h1 {
 
 .options__container {
     margin-top:25px;
+    position: relative;
 }
 
 .option--item {

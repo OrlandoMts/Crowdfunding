@@ -1,8 +1,10 @@
 .container--modal {
+    min-width: 300px;
+    max-width: 400px;
     display: none;
     position: absolute;
-    top: 257vh;
-    left: calc(50% - 159px);
+    top: -50px;
+    left: calc(50% - 150px);
     width: 85%;
 }
 .option--item .option--item-choose {
@@ -24,4 +26,8 @@
 .about--modal-close .close {
     width: 15px;
     height: 15px;
+}
+
+.modal--background {
+    background-color: red;
 }

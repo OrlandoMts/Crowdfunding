@@ -1,0 +1,40 @@
+/* Solo afecta al modal */
+.container--modal {
+    left: calc(50% - 191px);
+}
+
+/* Fin */
+
+.results {
+    height: 150px;
+}
+
+.result--data {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.result--item {
+    text-align: start;
+}
+
+.results__container .result--item::after {
+    display: block;
+    width: 80px;
+    height: 50px;
+    position: relative;
+    left: calc(70% -  10px);
+    top: -50px;
+    content: close-quote;
+    border-bottom: none;
+    border-right: 1px solid #CFCECD;
+}
+
+.results__container .result--item:last-child::after {
+    border-right: none;
+}
+
+.result__container {
+    margin-bottom: 30px;
+}
