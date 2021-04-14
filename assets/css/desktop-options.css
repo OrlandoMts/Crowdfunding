@@ -1,0 +1,43 @@
+.container--modal {
+    left: calc(50% - 405px);
+    min-width: 800px;
+    top: -100px
+}
+
+header {
+    background-image: url('../images/image-hero-desktop.jpg');
+}
+
+.header__menu--hamburger img {
+    display: none;
+}
+.header__menu--nav {
+    display: flex;
+    position: static;
+    width: 280px;
+    height: auto;
+    background-color: inherit;
+    border-radius: inherit;
+    list-style: none;
+}
+
+.header__menu--nav-item {
+    padding-bottom: none;
+    margin-top: none;
+    border-bottom: inherit;
+}
+
+.header__menu--nav-item a{
+    color: white;
+}
+
+.header__menu--nav-item a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.back__container {
+    width: 500px;
+    left: 29vw;
+    bottom: 16px;
+}

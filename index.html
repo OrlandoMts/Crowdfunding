@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crowdfund</title>
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/options.css">
+    <link rel="stylesheet" href="./assets/css/tablet-options.css" media="(min-width: 700px)">
+    <link rel="stylesheet" href="./assets/css/desktop-options.css" media="(min-width: 900px)">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body id="body">
     <header>
         <h1>Crowdfound</h1>
         <div class="header__menu">
-            <div class="header__menu--hamburger">
+            <div id="menu" class="header__menu--hamburger">
                 <img src="./assets/images/icon-hamburger.svg" alt="Menu">
             </div>
             <ul class="header__menu--nav">
@@ -38,54 +41,139 @@
         </div>
     </section>
 
+    <section class="back__container">
+        <img class="back--img" src="./assets/images/icon-check.svg" alt="">
+        <p class="result--title">Thansk for your support!</p>
+        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga saepe eos optio nostrum dolores qui, itaque labore quaerat dolor officia voluptate maiores enim molestiae adipisci. Inventore rerum ex iure dolores.</p>
+        <button class="button--ca">Got it!</button>
+    </section>
+
     <section class="results">
         <div class="results__container">
-            <div class="result--item">
-                <p class="result--title">$89,914</p>
-                <p class="paragraph">of $100,000 backed</p>
+            <div class="result--data">
+                <div class="result--item">
+                    <p class="result--title">$89,914</p>
+                    <p class="paragraph">of $100,000 backed</p>
+                </div>
+                <div class="result--item">
+                    <p class="result--title">5,007</p>
+                    <p class="paragraph">total backers</p>
+                </div>
+                <div class="result--item">
+                    <p class="result--title">56</p>
+                    <p class="paragraph">days left</p>
+                </div>
+            </div>    
+            <div class="result__container">
+                <div class="result--level">
+
+                </div>
             </div>
-            <div class="result--item">
-                <p class="result--title">5,007</p>
-                <p class="paragraph">total backers</p>
-            </div>
-            <div class="result--item">
-                <p class="result--title">56</p>
-                <p class="paragraph">days left</p>
-            </div>
-            <div class="result--level"></div>
         </div>
     </section>
 
     <section class="about__container">
         <article class="about__introduction">
             <p class="about__introduction--title">About this project</p>
-            <p class="about__introduction--paragraph">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish platform that elevates your screen to a more comfortable viewing height. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur possimus dolorum voluptates cumque dolor earum illum dolore, nisi pariatur quos necessitatibus itaque fugit reiciendis aliquid amet quidem illo debitis doloribus! Fugit reiciendis animi iusto. Suscipit dolorem similique consectetur quos laborum.</p>
-            <p class="about__introduction--paragraph">Feautiring artisan craaftmanship, the simplicity of design creates extra desk sapce below your computer to allow notepads, pens, and USB sticks to be stored under the stand</p>
+            <p class="about__introduction--paragraph">The Mastercraft Bamboo Monitor Riser is a sturdy and stylish
+                platform that elevates your screen to a more comfortable viewing height. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Consectetur possimus dolorum voluptates cumque dolor earum illum dolore,
+                nisi pariatur quos necessitatibus itaque fugit reiciendis aliquid amet quidem illo debitis doloribus!
+                Fugit reiciendis animi iusto. Suscipit dolorem similique consectetur quos laborum.</p>
+            <p class="about__introduction--paragraph">Feautiring artisan craaftmanship, the simplicity of design creates
+                extra desk sapce below your computer to allow notepads, pens, and USB sticks to be stored under the
+                stand</p>
         </article>
         <article class="options__container">
             <div class="option--item">
                 <h3 class="option--item-title">Bamboo Stand</h3>
                 <p class="option--item-subtitle">Pledge $25 or more</p>
-                <p class="option--item-paragraph">You get an ergonomic stand made of natural bamboo. You've helped us launch our promotional campaign, and you´ll be added to a special Backer memeber list.</p>
+                <p class="option--item-paragraph">You get an ergonomic stand made of natural bamboo. You've helped us
+                    launch our promotional campaign, and you´ll be added to a special Backer memeber list.</p>
                 <p class="number">101 <span>left</span></p>
                 <button class="button--ca">Select Reward</button>
             </div>
             <div class="option--item">
                 <h3 class="option--item-title">Black Edition Stand</h3>
                 <p class="option--item-subtitle">Pledge $75 or more</p>
-                <p class="option--item-paragraph">You get a Black Special Edition computer stand and a persoanl thank you. You'll be added to our Backer meeber list. Shipping is included</p>
+                <p class="option--item-paragraph">You get a Black Special Edition computer stand and a persoanl thank
+                    you. You'll be added to our Backer meeber list. Shipping is included</p>
                 <p class="number">64 <span>left</span></p>
                 <button class="button--ca">Select Reward</button>
             </div>
             <div class="option--item item__opacity">
                 <h3 class="option--item-title">Mohogany Special Edition</h3>
                 <p class="option--item-subtitle">Pledge $200 or more</p>
-                <p class="option--item-paragraph">You get two Special Edition Mohogany stands, a Backer T-Shirt, and a personal thank you. Tou'll be added to our Backer member list.Shipping is included</p>
+                <p class="option--item-paragraph">You get two Special Edition Mohogany stands, a Backer T-Shirt, and a
+                    personal thank you. Tou'll be added to our Backer member list.Shipping is included</p>
                 <p class="number">0 <span>left</span></p>
                 <button class="button--ca button__gray">Out of Stock</button>
             </div>
+
+            <!--  Modal Selected -->
+            <section class="about__container container--modal">
+                <article class="about__introduction">
+                    <div class="about--modal-close">
+                        <p class="about__introduction--title">Back this project</p>
+                        <img class="close" src="./assets/images/icon-close-modal.svg" alt="close">
+                    </div>
+                    <p class="about__introduction--paragraph">Want to support us in bringing Mastercraft Bamboo Monitor
+                        Riser out in the world?</p>
+                </article>
+                <article class="options__container">
+                    <div class="option--item">
+                        <div class="option--item-choose">
+                            <input type="radio" name="" id="">
+                            <h3 class="option--item-title">Pledge whith no reward</h3>
+                        </div>
+                        <p class="option--item-paragraph">Choose to support us without a reward if you simply believe in
+                            our project. As a backer, you will be signed up to receive product updates via email.</p>
+                        <p class="number">101 <span>left</span></p>
+
+                    </div>
+                    <div class="option--item">
+                        <div class="option--item-choose">
+                            <input type="radio" name="" id="">
+                            <h3 class="option--item-title">Bamboo Stand</h3>
+                        </div>
+                        <p class="option--item-subtitle">Pledge $25 or more</p>
+                        <p class="option--item-paragraph">You get an ergonomic stand made of natural bamboo. You've
+                            helped us launch our promotional campaign, and you´ll be added to a special Backer memeber
+                            list.</p>
+                        <p class="number">101 <span>left</span></p>
+
+                    </div>
+                    <div class="option--item">
+                        <div class="option--item-choose">
+                            <input type="radio" name="" id="">
+                            <h3 class="option--item-title">Black Edition Stand</h3>
+                        </div>
+                        <p class="option--item-subtitle">Pledge $75 or more</p>
+                        <p class="option--item-paragraph">You get a Black Special Edition computer stand and a persoanl
+                            thank you. You'll be added to our Backer meeber list. Shipping is included</p>
+                        <p class="number">64 <span>left</span></p>
+
+                    </div>
+                    <div class="option--item item__opacity">
+                        <div class="option--item-choose">
+                            <input type="radio" name="" id="">
+                            <h3 class="option--item-title">Mohogany Special Edition</h3>
+                        </div>
+                        <p class="option--item-subtitle">Pledge $200 or more</p>
+                        <p class="option--item-paragraph">You get two Special Edition Mohogany stands, a Backer T-Shirt,
+                            and a personal thank you. Tou'll be added to our Backer member list.Shipping is included</p>
+                        <p class="number">0 <span>left</span></p>
+
+                    </div>
+                </article>
+            </section>
+            <!-- End Modal selected -->
         </article>
     </section>
+
+
+
+    <script src="./assets/script.js"></script>
 </body>
 
 </html>
