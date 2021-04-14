@@ -1,6 +1,7 @@
 let menu = document.getElementById('menu');
 let nav = document.querySelector('.header__menu--nav');
 let optionSelected = document.querySelectorAll('.option--item .button--ca');
+let backProject = document.querySelector('.buttons__container .button--ca');
 
 menu.addEventListener('click', () => {
     if (nav.style.display != 'block') {
@@ -31,3 +32,16 @@ for (let i = 0; i < optionSelected.length; i++) {
         }
     });
 }
+
+backProject.addEventListener('click', (e) => {
+    let modalBack = document.querySelector('.back__container');
+    
+    if (modalBack.style.display != 'flex') {
+        modalBack.style.display = 'flex';
+        let buttonBack = document.querySelector('.back__container .button--ca');
+        
+        buttonBack.addEventListener('click', () => {
+            modalBack.style.display = 'none';
+        });
+    }
+});

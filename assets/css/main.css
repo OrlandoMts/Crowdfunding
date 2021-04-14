@@ -70,6 +70,27 @@ h1 {
     display: block;
 } */
 
+.back__container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 320px;
+    height: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: white;
+    position: absolute;
+    left: 30px;
+    bottom: -270px;
+}
+
+.back--img {
+    width: 50px;
+    height: 50px;
+}
+
 .mastercraft {
     position: relative;
     top: -38px;
